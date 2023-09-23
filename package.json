@@ -1,5 +1,5 @@
 {
-  "name": "elvin-portfolio.github.io",
+  "name": "vegepizza.github.io",
   "description": "My first portfolio website!",
   "version": "1.0.0",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elvintern/elvin-portfolio.github.io.git"
+    "url": "git+https://github.com/VegePizza/vegepizza.github.io.git"
   },
-  "author": "Jinwoo Park",
+  "author": "Zachary Zhi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/elvintern/elvin-portfolio.github.io/issues"
+    "url": "https://github.com/VegePizza/vegepizza.github.io/issues"
   },
-  "homepage": "https://github.com/elvintern/elvin-portfolio.github.io#readme",
+  "homepage": "https://github.com/VegePizza/vegepizza.github.io#readme",
   "dependencies": {
     "aos": "^2.3.4",
     "sass": "^1.56.2"
