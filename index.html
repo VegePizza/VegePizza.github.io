@@ -1,309 +1,738 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Jonathan Chai</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-               
-    <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav">
-            <div>
-                <a href="#" class="nav__logo">Jonathan</a>
-            </div>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FE7F5PHHT4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-            
-        </nav>
+      gtag('config', 'G-FE7F5PHHT4');
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="./resources/img/bg-min.jpg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <title>Zachary Zhi | Portfolio</title>
+    <!-- Google Font CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fav Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./resources/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./resources/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./resources/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./resources/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./resources/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- My style -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="resources/css/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav__list nav__list--socials">
+        <li class="nav__item">
+          <a
+            href="https://github.com/vegepizza"
+            target="_blank"
+            class="nav__link"
+            ><i class="fab fa-github-square nav__icon"></i
+          ></a>
+        </li>
+        <li class="nav__item">
+          <a
+            href="https://www.linkedin.com/in/zachary-zhi/"
+            target="_blank"
+            class="nav__link"
+            ><i class="fab fa-linkedin nav__icon"></i
+          ></a>
+        </li>
+        <li class="nav__item">
+          <a
+            href="mailto: jczhi@hotmail.com"
+            target="_blank"
+            class="nav__link"
+            ><i class="fas fa-envelope nav__icon"></i
+          ></a>
+        </li>
+      </ul>
+      <ul class="nav__list nav__list--menu">
+        <li class="nav__item">
+          <a href="#home" class="nav__link">home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">about</a>
+        </li>
+        <li class="nav__item">
+          <a href="#project" class="nav__link">projects</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">contact me</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars hamburger-icon"></i>
+      </div>
+    </nav>
+    <header id="home" class="header">
+      <div class="hero-box">
+        <p class="hero-box__intro">Hi, my name is</p>
+        <h1 class="heading-primary heading-primary--main">
+          Jinwoo Park <br />
+          <span class="heading-primary heading-primary--sub"
+            >I create exceptional user experiences</span
+          >
+        </h1>
+        <a href="#about" class="btn btn--about">more about me</a>
+        <a
+          href="./resources/img/Zachary Zhi CV final v60"
+          target="_blank"
+          class="btn btn--about"
+          >Check my CV</a
+        >
+      </div>
     </header>
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home" id=home>
-            <div class="home__header-area">
-                <h2>I'm a <span class="animate"></span></h2>
-    
-                <div class="home__text">
-                    <h2>Hello, I'm Jonathan.</h2>
-                </div>
-                
-                <img src="https://media.giphy.com/media/U7Ki2IlyjtUvMCYOQJ/source.gif" class=home__img alt="">
-                
-                <div class="home__button">
-                    <a href="#work" class="home__project-btn">My Projects</a>
-                </div>
-                
+
+    <main class="main">
+      <section id="about" class="section-about">
+        <h2 class="heading-secondary">About me</h2>
+        <article class="section-about__container">
+          <div
+            class="section-about__text"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-easing="linear"
+          >
+            <p class="paragraph paragraph--about">
+              I am a Cyber Security Professional with a great passion for both Blue Teaming & Red Teaming.
+              Also a full-stack web developer who loves coding and creating.
+            </p>
+
+            <p class="paragraph paragraph--about">
+              Professional magician | Campfire Guitarist | Capture The Flag Player (Ethical Hacking)
+              My favourite quote is "Soul driven is the desire of the prophet."
+            </p>
+
+            <p class="paragraph paragraph--about">
+              Here are a few technologies I have been working with recently:
+            </p>
+            <ul class="skill-list">
+              <li class="skill-list__item">
+                <i class="fas fa-play skill-list__icon"></i>HTML
+              </li>
+              <li class="skill-list__item">
+                <i class="fas fa-play skill-list__icon"></i>Typescript
+              </li>
+              <li class="skill-list__item">
+                <i class="fas fa-play skill-list__icon"></i>CSS & SCSS
+              </li>
+              <li class="skill-list__item">
+                <i class="fas fa-play skill-list__icon"></i>C#
+              </li>
+              <li class="skill-list__item">
+                <i class="fas fa-play skill-list__icon"></i>JavaScript
+              </li>
+              <li class="skill-list__item">
+                <i class="fas fa-play skill-list__icon"></i>Node.js
+              </li>
+              <li class="skill-list__item">
+                <i class="fas fa-play skill-list__icon"></i>React
+              </li>
+              <li class="skill-list__item">
+                <i class="fas fa-play skill-list__icon"></i>SQL & NoSQL
+              </li>
+            </ul>
+          </div>
+          <div
+            class="section-about__img"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-easing="linear"
+          >
+            <img
+              srcset="
+                ./resources/img/compressed/profile photo - Zachary Zhi.JPG 1x,
+                ./resources/img/compressed/profile photo - Zachary Zhi.JPG 2x
+              "
+              src="./resources/img/compressed/profile photo - Zachary Zhi.JPG"
+              alt="Zachary's profile photo"
+              class="section-about__profile"
+            />
+          </div>
+        </article>
+        <div class="container-interests">
+          <h3 class="heading-tertiary">my interests</h3>
+          <div class="interests">
+            <div class="interest">
+              <div class="interest__item">
+                <i class="interest__icon fas fa-coffee"></i>
+              </div>
+              <p class="interest__text">coffee</p>
             </div>
-            
-        </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
-
-            <div class="about__container">
-                <div class="about__img">
-                    <!-- <img src="assets/img/untitled.png" alt=""> -->
-                </div>
-                
-                <div>
-                    <h2 class="about__subtitle">I'm Jonathan</h2>
-                    <div class="about__study-container">
-                        <div class="about__study-grid1">
-                            <img class="about__point1-img" src="assets/img/uq.png"></img>
-                            <li class="about__point">Studied at University of Queensland</li>
-                        </div>
-                        <div class="about__study-grid2">
-                            <img class="about__point2-img" src="assets/img/cs.png"></img>
-                            <li class="about__point">Bachelor of Computer Science, majoring Data Science</li>
-                        </div>
-                    </div>
-                    <p class="about__text">
-                        Interests in machine learning, artificial intelligence, website and application development. 
-                        This website portfolio serves as my library of work/projects and my education.
-                    </p>           
-                </div>
-                
-                <div class="about__programs">
-                    <h2 class="about__programs-title">Skills</h2>
-                    <div class="about__programs-img">
-                        <img src="assets/img/python.png" alt="" class="about__program-item">
-                        <img src="assets/img/java.png" alt="" class="about__program-item">
-                        <img src="assets/img/html.png" alt="" class="about__program-item">
-                        <img src="assets/img/css.png" alt="" class="about__program-item">
-                        <img src="assets/img/javascript.png" alt="" class="about__program-item">
-                        <img src="assets/img/sql.png" alt="" class="about__program-item">
-                    </div>
-                </div>
+            <div class="interest">
+              <div class="interest__item">
+                <i class="interest__icon fas fa-pepper-hot"></i>
+              </div>
+              <p class="interest__text">spicy food</p>
             </div>
-        </section>
-
-        <!--===== WORK =====-->
-        <section class="work section" id="work">
-            <h2 class="section-title">Projects</h2>
-
-            <div class="work__container">
-                <div class="work__img">
-                    <img id="myBtn" src="./assets/img/paint_project_icon.png" alt="">
-                </div>
-
-                 <!-- The Modal -->
-                 <div id="myModal" class="modal">
-                     <!-- Modal content -->
-                     <div class="modal-content">
-                        <span class="close">&times;</span> 
-                        <div class="left_text">
-                            <h2>Sketch Pad</h2>
-                            <p>A simple version of a sketching program, inspired by Microsoft Paint.</p>
-                            <p>The program was written in Python using Pygame module. This
-                                beginner-level project is as an introduction to the Pygame module and GUI 
-                                where the user can interact with the program.
-                            </p>
-                            <p2>Check it out here at <a href="https://github.com/jchai5/paint_project" class="">Github</a>! </p2>
-                            <h2>Tools Used</h2>
-                            <ul>Python</ul>
-                            <h2>Difficulty</h2>
-                            <img src="./assets/img/stars/2star.png" alt="">
-                        </div>
-                        <div class="right_gif">
-                            <img src="./assets/img/paint.gif" alt="">
-                        </div>
-                     </div>
-                 </div>
-    
+            <div class="interest">
+              <div class="interest__item">
+                <i class="interest__icon fas fa-bowling-ball"></i>
+              </div>
+              <p class="interest__text">bowling</p>
             </div>
-            <div class="work__container">
-                <div class="work__img">
-                    <img id="myBtn2" src="./assets/img/sudokuIcon.PNG" alt="">
-                </div>
-                <!-- The Modal -->
-                <div id="myModal2" class="modal">
-                    <div class="modal-content">
-                       <span class="close2">&times;</span>
-                       <div class="left_text">
-                           <h2>Sudoku Solver!</h2>
-                           <p>This program automatically solves the given Sudoku puzzle. 
-                               The solver was written in Python and utilises Pyautogui module to control 
-                                the keyboard inputs to enter the correct numbers. The key algorithm 
-                                that allows the program to find the answer is through brute-force back-tracking.
-                                
-                           </p>
-                           <p2>Check it out here at <a href="https://github.com/jchai5/mySudokuSolver" class="">Github</a>! </p2>
-                           <h2>Tools Used</h2>
-                           <ul>Python</ul>
-                           <h2>Difficulty</h2>
-                            <img src="./assets/img/stars/3star.png" alt="">
-                           
-
-                       </div>
-                       <div class="right_gif">
-                           <img src="./assets/img/sudoku2.gif" alt="">
-                       </div>
-                    </div>
-                </div>
-
+            <div class="interest">
+              <div class="interest__item">
+                <i class="interest__icon fas fa-dumbbell"></i>
+              </div>
+              <p class="interest__text">workout</p>
             </div>
-            <div class="work__container">
-                <div class="work__img">
-                    <img id="myBtn3"src="./assets/img/pathfinding.png" alt="">
-                </div>
-                <!-- The Modal -->
-                <div id="myModal3" class="modal">
-                    <div class="modal-content">
-                       <span class="close3">&times;</span>
-                       <div class="left_text">
-                           <h2>PathFinding</h2>
-                           <p>This program uses the Pathfinding module to utilise the A* Search algorithm. Pygame was also 
-                               used to create the GUI and user controls.
-                           </p>
-                           <p2>Check it out here at <a href="https://github.com/jchai5/pathfinding" class="">Github</a>! </p2> 
-                           <h2>Tools Used</h2>
-                            <ul>Python</ul>
-                            <h2>Difficulty</h2>
-                            <img src="./assets/img/stars/4star.png" alt="">
-                       </div>
-                       <div class="right_gif">
-                           <img src="./assets/img/pathfinding.gif" alt="">
-                       </div>
-                    </div>
-                </div>
-
+            <div class="interest">
+              <div class="interest__item">
+                <i class="interest__icon fas fa-dog"></i>
+              </div>
+              <p class="interest__text">dogs</p>
             </div>
-
-            <div class="work__container">
-                <div class="work__img">
-                    <img id="myBtn4"src="https://media.giphy.com/media/gizZvICXsQn2g6JajG/source.gif" alt="">
-                </div>
-                <!-- The Modal -->
-                <div id="myModal3" class="modal">
-                    <div class="modal-content">
-                       <span class="close3">&times;</span>
-                       <div class="left_text">
-                           <h2></h2>
-                           <!-- <p2>Check it out here at <a href="https://github.com/jchai5/paint_project" class="">Github</a>! </p2> -->
-                           <!-- <h2>Tools Used</h2> -->
-                           <!-- <ul>Python</ul> -->
-                       </div>
-                       <div class="right_gif">
-                           <img src="https://media.giphy.com/media/iHD88spVFkL7mZakwa/giphy.gif" alt="">
-                       </div>
-                    </div>
-                </div>
-
+            <div class="interest">
+              <div class="interest__item">
+                <i class="interest__icon fas fa-plane"></i>
+              </div>
+              <p class="interest__text">travel</p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact"> 
-            <h2 class="section-title">Contact</h2>
-
-            <div class="contact__container">
-                <form action="https://formsubmit.co/jonathan_chai90@hotmail.com" method="POST" class="contact__form">
-                    <input type="text" name="name" placeholder="Name" class="contact__input" required>
-                    <input type="email" name="email" placeholder="Email" class="contact__input" required>
-                    <input type="text" name="message" placeholder="Message" cols="0" rows="10" class="contact__input" required></input>
-                    <input type="hidden" name="_subject" value="New submission!">
-                    <button type="submit" class="contact__button">Send</button>
-                </form>
-
+      <section id="project" class="section-project">
+        <h2 class="heading-secondary heading-secondary--project">
+          some of my works
+        </h2>
+        <ul class="projects">
+          <li class="project">
+            <div class="project__img-box">
+              <img
+                src="./resources/img/hbb-main.PNG"
+                alt="project image"
+                class="project__img"
+              />
+              <div class="project__links">
+                <a
+                  href="https://github.com/elvintern/hot-body-buddy-app"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="project__icon fab fa-github-square"></i>Github</a
+                >
+                <a
+                  href="https://hotbodybuddy.up.railway.app/about"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="project__icon fas fa-play-circle"></i>Live</a
+                >
+              </div>
             </div>
-        </section>
+            <article class="project__text">
+              <p class="project__sort">personal project</p>
+              <a
+                href="https://hotbodybuddy.up.railway.app/about"
+                target="_blank"
+                class="project__title"
+                >hot body buddy
+                <span class="project__on-going">- on going</span></a
+              >
+              <p class="project__stacks">
+                (React / PWA / SCSS / Express.js / Node.js / RESTful APIs /
+                MongoDB / Jest)
+              </p>
+              <div class="project__intro">
+                Hot Body Buddy helps you get in the habit of going to the gym.
+                It displays how many times you went to the gym, your goal,
+                motivational quotes and loading images. You can also store your
+                customised workout routines and gym performance so you can
+                compare them with your previous records after a workout.
+              </div>
+              <p class="project__outro">Main features or focuses</p>
+              <ul class="learning-list">
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Manage workout
+                  routines
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Search Bar Feature
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Install App on
+                  Mobile and Desktop
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Store and display
+                  users' performance
+                </li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="project">
+            <div class="project__img-box">
+              <img
+                src="./resources/img/greenkiwi.png"
+                alt="project image"
+                class="project__img"
+              />
+              <div class="project__links">
+                <a
+                  href="https://github.com/Seongrok-Shin/govhack2023_frontend"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="project__icon fab fa-github-square"></i>Github</a
+                >
+                <a
+                  href="https://govhack2023-frontend.vercel.app/"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="project__icon fas fa-play-circle"></i>Live</a
+                >
+                <a
+                  href="https://hackerspace.govhack.org/projects/green_kiwi"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="project__icon fas fa-video"></i>PR Video</a
+                >
+              </div>
+            </div>
+            <article class="project__text">
+              <p class="project__sort">
+                GovHack 2023 team project (19th - 20th of August)
+              </p>
+              <a
+                href="https://govhack2023-frontend.vercel.app/"
+                target="_blank"
+                class="project__title"
+                >Green Kiwi - Mobile Web App</a
+              >
+              <p class="project__stacks">
+                (Next.js / React / SCSS / Bootstrap / Express.js / RESTful APIs
+                / Node.js / MongoDB / Firebase)
+              </p>
+              <div class="project__intro">
+                This is a platform that allow citizens to track how they are
+                reducing carbon emissions and to share their progress and
+                achievements with others. By connecting with others on the
+                platform, we can feel like we're making a difference together
+                and reach big emission reduction goals which seemed impossible.
+              </div>
+              <p class="project__outro">Main features or focuses</p>
+              <ul class="learning-list">
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Main social page
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Post component
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Creating post
+                  component
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Navigation bar
+                </li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="project">
+            <div class="project__img-box">
+              <img
+                src="./resources/img/kuickpay.PNG"
+                alt="project image"
+                class="project__img"
+              />
+              <div class="project__links">
+                <a
+                  href="https://github.com/xche909/KuickPay"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="project__icon fab fa-github-square"></i>Github</a
+                >
+                <a
+                  href="https://kuickpay.netlify.app/"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="project__icon fas fa-play-circle"></i>Live</a
+                >
+              </div>
+            </div>
+            <article class="project__text">
+              <p class="project__sort">group project</p>
+              <a
+                href="https://kuickpay.netlify.app/"
+                target="_blank"
+                class="project__title"
+                >kuick pay</a
+              >
+              <p class="project__stacks">
+                (React / CSS / GraphQL / Apollo Server / MongoDB / Node.js /
+                Mocha)
+              </p>
+              <div class="project__intro">
+                KuickPay is a mobile payment app that provides a convenient and
+                secure way to make payments, send and receive money, and manage
+                transactions. With a user-friendly interface and robust
+                features, KuickPay simplifies the payment process and enhances
+                financial management on the go.
+              </div>
+              <p class="project__outro">Main features or focuses</p>
+              <ul class="learning-list">
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Navigation footer
+                  for a transaction history list
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Collaborate with
+                  others
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Re-design a logo
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Fix front-end
+                  issues
+                </li>
+              </ul>
+            </article>
+          </li>
+          <li class="project">
+            <div class="project__img-box">
+              <img
+                srcset="
+                  ./resources/img/compressed/happy-doggy-min.PNG 1x,
+                  ./resources/img/compressed/happy-doggy.PNG     2x
+                "
+                src="./resources/img/happy-doggy.PNG"
+                alt="project image"
+                class="project__img"
+              />
+              <div class="project__links">
+                <a
+                  href="https://github.com/horoeka-2022/Happy-Doggy"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="project__icon fab fa-github-square"></i>Github</a
+                >
+                <a
+                  href="https://happy-doggy-production-99.up.railway.app/"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="project__icon fas fa-play-circle"></i>Live</a
+                >
+              </div>
+            </div>
+            <article class="project__text">
+              <p class="project__sort">group project</p>
+              <a
+                href="https://happy-doggy-production-99.up.railway.app/"
+                target="_blank"
+                class="project__title"
+                >happy doggy</a
+              >
+              <p class="project__stacks">
+                (React / CSS / Express.js / Restful APIs / SQLite3 / Node.js /
+                Auth0 / Jest)
+              </p>
+              <div class="project__intro">
+                My team and I built a single page app using React, RESTful APIs,
+                Auth0, Express.js, SQL and Node.js, which helps dog owners find
+                people who can take care of their dogs and dog walkers who want
+                to walk with dogs or need dogs for educational purposes.
+              </div>
+              <p class="project__outro">Main features or focuses</p>
+              <ul class="learning-list">
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Agile Methodology
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>User
+                  Authentication
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>SMTP Service
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>User Authorization
+                </li>
+              </ul>
+            </article>
+          </li>
+          <li class="project">
+            <div class="project__img-box">
+              <img
+                src="./resources/img/compressed/todo-fullstack.PNG"
+                alt="project image"
+                class="project__img"
+              />
+
+              <div class="project__links">
+                <a
+                  href="https://github.com/elvintern/todo-full-stack"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="project__icon fab fa-github-square"></i>Github</a
+                ><a target="_blank" class="project__link project__link--todo"
+                  ><i class="project__icon fas fa-play-circle"></i>Live</a
+                >
+              </div>
+              <p class="alert-msg--todo"></p>
+            </div>
+            <article class="project__text">
+              <p class="project__sort">solo project</p>
+              <a
+                href="https://github.com/elvintern/todo-full-stack"
+                target="_blank"
+                class="project__title"
+                >todo full-stack</a
+              >
+              <p class="project__stacks">
+                (React / Redux Toolkit / CSS / Express.js / Restful APIs /
+                SQLite3 / Node.js)
+              </p>
+              <div class="project__intro">
+                It was my first time using redux toolkit(async thunk). This
+                project helped me understand how to manage state and data
+                between front-end and back-end in an asynchronous way.
+              </div>
+              <p class="project__outro">Main features or focuses</p>
+              <ul class="learning-list">
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>React
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Redux Toolkit
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>RESTful APIs
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Managing DB
+                </li>
+              </ul>
+            </article>
+          </li>
+          <li class="project">
+            <div class="project__img-box">
+              <img
+                srcset="
+                  ./resources/img/compressed/natours-min.PNG 1x,
+                  ./resources/img/compressed/natours.PNG     2x
+                "
+                src="./resources/img/natours.PNG"
+                alt="project image"
+                class="project__img"
+              />
+              <div class="project__links">
+                <a
+                  href="https://github.com/elvintern/natours"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="project__icon fab fa-github-square"></i>Github</a
+                ><a
+                  href="./natours/build/index.min.html"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="project__icon fas fa-play-circle"></i>Live</a
+                >
+              </div>
+            </div>
+            <article class="project__text">
+              <p class="project__sort">solo project</p>
+              <a
+                href="./natours/build/index.min.html"
+                target="_blank"
+                class="project__title"
+                >natours</a
+              >
+              <p class="project__stacks">(HTML / SCSS / Javascript)</p>
+              <div class="project__intro">
+                I created website to practice SASS and advanced CSS animations
+                for a better UX. I was able to learn about responsive images
+                using srcset and picture tags.
+              </div>
+              <p class="project__outro">Main features or focuses</p>
+              <ul class="learning-list">
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>SASS
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Advanced CSS
+                  Animation
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>BEM Convention
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Responsive Images
+                </li>
+              </ul>
+            </article>
+          </li>
+          <li class="project">
+            <div class="project__img-box">
+              <img
+                srcset="
+                  ./resources/img/compressed/omnifood-min.PNG 1x,
+                  ./resources/img/compressed/omnifood.PNG     2x
+                "
+                src="./resources/img/omnifood.PNG"
+                alt="project image"
+                class="project__img"
+              />
+              <div class="project__links">
+                <a
+                  href="https://github.com/elvintern/omnifood"
+                  target="_blank"
+                  class="project__link"
+                  ><i class="project__icon fab fa-github-square"></i>Github</a
+                ><a
+                  href="./omnifood/build/index.min.html"
+                  class="project__link"
+                  target="_blank"
+                  ><i class="project__icon fas fa-play-circle"></i>Live</a
+                >
+              </div>
+            </div>
+            <article class="project__text">
+              <p class="project__sort">solo project</p>
+              <a
+                href="./omnifood/build/index.min.html"
+                target="_blank"
+                class="project__title"
+                >Omnifood</a
+              >
+              <p class="project__stacks">(HTML / CSS / Javascript)</p>
+              <div class="project__intro">
+                I made a static website to practice my responsive design skills
+                using the rem unit. Through this project, I was able to learn
+                how to use AOS (Animate On Scroll) for a better user interface,
+                as well as how to optimize images for better performance.
+              </div>
+              <p class="project__outro">Main features or focuses</p>
+              <ul class="learning-list">
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Animate On Scroll
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>CSS
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Responsive Web
+                  Design
+                </li>
+                <li class="learning-item">
+                  <i class="fas fa-play skill-list__icon"></i>Optimizing Images
+                </li>
+              </ul>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section-contact">
+        <h2 class="heading-secondary heading-secondary--contact">contact me</h2>
+        <p class="paragraph paragraph--contact">
+          Thanks for visiting my Portfolio!! <br />
+          Please feel free to ask me any questions :)
+        </p>
+        <form class="contact-form">
+          <div class="contact-form__info">
+            <div class="contact-form__group">
+              <input
+                type="text"
+                id="name"
+                placeholder="NAME *"
+                class="contact-form__input contact-form__input--name"
+                required
+              />
+              <label class="contact-form__label" for="name">NAME *</label>
+            </div>
+            <div class="contact-form__group">
+              <input
+                type="email"
+                id="email"
+                placeholder="EMAIL *"
+                class="contact-form__input contact-form__input--email"
+                required
+              />
+              <label class="contact-form__label" for="email">EMAIL *</label>
+            </div>
+          </div>
+          <div class="contact-form__group">
+            <textarea
+              id="message"
+              rows="7"
+              placeholder="MESSAGE *"
+              class="contact-form__input contact-form__input--message"
+              required
+            ></textarea>
+            <label class="contact-form__label" for="message">MESSAGE *</label>
+          </div>
+
+          <p class="alert-msg"></p>
+
+          <button type="submit" class="btn btn--contact">send message</button>
+        </form>
+      </section>
     </main>
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--===== MAIN JS =====-->
-    <script src="/assets/js/script.js"></script>
-
-    <!-- typed.min.js file from typed.js folder -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Add jquery cdn -->
-    <script src="/assets/typed.js-master/lib/typed.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        var typed = new Typed(".animate", {
-            strings: [
-                "CompSci Student.",
-                "Programmer.",
-                "Developer."
-            ],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true
-        });
+      AOS.init();
     </script>
-
-    <!-- FOR MODALS -->
-    <!-- SKETCH PROGRAM -->
-    <script>
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("close")[0];
-        btn.onclick = function() {
-        modal.style.display = "block";
-        }
-        span.onclick = function() {
-        modal.style.display = "none";
-        }
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+    <script src="./resources/js/index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('NQ9-R6TkAbGNIgupe');
+      })();
     </script>
-
-    <!-- COMING SOON -->
-    <script>
-        var modal2 = document.getElementById("myModal2");
-        var btn2 = document.getElementById("myBtn2");
-        var span2 = document.getElementsByClassName("close2")[0];
-        btn2.onclick = function() {
-        modal2.style.display = "block";
-        }
-        span2.onclick = function() {
-        modal2.style.display = "none";
-        }
-        window.onclick = function(event) {
-            if (event.target == modal2) {
-                modal2.style.display = "none";
-            }
-        }
-    </script>
-
-    <!-- COMING SOON -->
-    <script>
-        var modal3 = document.getElementById("myModal3");
-        var btn3 = document.getElementById("myBtn3");
-        var span3 = document.getElementsByClassName("close3")[0];
-        btn3.onclick = function() {
-        modal3.style.display = "block";
-        }
-        span3.onclick = function() {
-        modal3.style.display = "none";
-        }
-        window.onclick = function(event) {
-            if (event.target == modal3) {
-                modal3.style.display = "none";
-            }
-        }
-    </script>
-
-
-
-</body>
+  </body>
 </html>
-

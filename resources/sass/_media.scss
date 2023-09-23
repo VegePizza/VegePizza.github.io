@@ -1,0 +1,331 @@
+@use 'abstracts/mixins' as m;
+@use 'abstracts/variables' as v;
+
+/* *************************************** */
+/* Media Stlye */
+/* *************************************** */
+/* Extra Large 2300px to ~ */
+@media only screen and (min-width: 2300px) {
+  html {
+    font-size: 68%;
+  }
+
+  .heading-primary {
+    font-size: 9rem;
+  }
+
+  .heading-secondary {
+    font-size: 7rem;
+  }
+
+  .paragraph {
+    font-size: 3rem;
+
+    &--about {
+      width: 90%;
+    }
+
+    &--contact {
+      font-size: 3.5rem;
+    }
+  }
+
+  .btn {
+    font-size: 3.2rem;
+  }
+
+  .nav__link {
+    font-size: 4rem;
+  }
+
+  .hero-box__intro {
+    font-size: 5.7rem;
+  }
+
+  .skill-list {
+    font-size: 3.2rem;
+  }
+
+  .projects {
+    margin-top: 7rem;
+  }
+
+  .project {
+    &__sort {
+      font-size: 4rem;
+    }
+
+    &__title {
+      font-size: 6rem;
+    }
+
+    &__intro,
+    &__outro {
+      font-size: 3.2rem;
+    }
+  }
+
+  .learning-list {
+    font-size: 3.2rem;
+  }
+
+  .contact-form {
+    font-size: 3rem;
+    margin-top: 7rem;
+
+    &__label {
+      top: -3rem;
+      font-size: 3rem;
+    }
+
+    &__input {
+      font-size: 3rem;
+    }
+  }
+}
+
+/* Default range */
+
+/* Large laptop to Desktop: 1324px ~ 1728px */
+@media only screen and (max-width: 1728px) {
+  html {
+    font-size: 52%;
+  }
+
+  .paragraph {
+    font-size: 2.4rem;
+
+    &--about {
+      width: 90%;
+    }
+  }
+
+  .section-about {
+    &__img {
+      &::after {
+        top: 3rem;
+        right: 14rem;
+      }
+      &:hover::after {
+        top: 2rem;
+        right: 15rem;
+      }
+    }
+  }
+
+  .nav__link {
+    font-size: 3rem;
+  }
+}
+
+/* Large Tablet to Laptop: 848px ~ 1323px */
+@media only screen and (max-width: 1323px) {
+  html {
+    font-size: 49%;
+  }
+
+  .section-about {
+    &__img {
+      &::after {
+        top: 3rem;
+        right: 12rem;
+      }
+      &:hover::after {
+        top: 2rem;
+        right: 13rem;
+      }
+    }
+  }
+
+  .project {
+    margin-bottom: 34rem;
+
+    &__intro {
+      width: 65%;
+      font-size: 2.4rem;
+      padding: 1.2rem;
+    }
+  }
+
+  .in-progress-msg {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large Phone to Tablet: 403px ~ 847px */
+@media only screen and (max-width: 847px) {
+  html {
+    font-size: 47%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav__list--menu {
+    display: none;
+  }
+
+  .nav__list--menu--clicked {
+    display: flex;
+    text-align: right;
+    position: absolute;
+    top: 12vh;
+    right: 10%;
+    flex-direction: column;
+    background-color: rgba(v.$color-grey-dark, 0.7);
+    padding: 1.5rem;
+  }
+
+  .header {
+    padding: 12vh 7% 0;
+  }
+
+  .section-about,
+  .section-project,
+  .section-contact {
+    padding: 7%;
+  }
+
+  .section-about__container {
+    flex-direction: column-reverse;
+  }
+
+  .section-about__img {
+    width: 60%;
+    margin-top: 3rem;
+  }
+
+  .section-about__text {
+    margin-top: 3rem;
+    font-size: 3.5rem;
+  }
+
+  .paragraph--about {
+    font-size: 2.7rem;
+  }
+
+  .interests {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .project {
+    display: block;
+    margin-bottom: 55rem;
+
+    &:nth-of-type(odd) {
+      .project__img-box {
+        margin-left: auto;
+      }
+    }
+
+    &__img-box {
+      width: 70%;
+      display: block;
+      margin-bottom: 1rem;
+
+      &::before {
+        height: calc(100% - 3.3rem);
+      }
+    }
+
+    &__intro {
+      width: 90%;
+    }
+  }
+
+  .learning-list {
+    @include m.list-style(repeat(2, minmax(10rem, 50%)), 2.2rem);
+  }
+
+  .in-progress-msg {
+    font-size: 2.2rem;
+  }
+
+  .paragraph--contact {
+    width: 100%;
+  }
+
+  .btn--contact {
+    width: 40%;
+  }
+}
+
+/* Extra small phone to Phone: 402px ~ 530px*/
+@media only screen and (max-width: 550px) {
+  .project {
+    margin-bottom: 65rem;
+  }
+
+  .section-about {
+    &__img {
+      &::after {
+        top: 3rem;
+        right: 8rem;
+      }
+      &:hover::after {
+        top: 2rem;
+        right: 9rem;
+      }
+    }
+  }
+}
+
+/* Extra small phone to Phone: 0px ~ 402px*/
+@media only screen and (max-width: 402px) {
+  html {
+    font-size: 45%;
+  }
+
+  .header {
+    padding: 12vh 5% 0;
+  }
+
+  .section-about,
+  .section-project,
+  .section-contact {
+    padding: 5%;
+  }
+
+  .heading-primary {
+    font-size: 6rem;
+  }
+
+  .section-about__img {
+    width: 100%;
+  }
+
+  .paragraph--about {
+    width: 100%;
+  }
+
+  .project {
+    &__img-box {
+      width: 85%;
+    }
+
+    &__intro {
+      width: 100%;
+    }
+  }
+
+  .contact-form__info {
+    flex-direction: column;
+  }
+
+  .btn--contact {
+    width: 60%;
+  }
+}
+
+/* *************************************** */
+/* Img Responsive Stlye */
+/* *************************************** */
+@media only screen and (min-resolution: 192dpi) and (min-width: 500px),
+  (min-width: 1000px) {
+  .header {
+    @include m.bg-style('../img/compressed/bg.jpg');
+  }
+}
