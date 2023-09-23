@@ -1,9 +1,309 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Jonathan Chai</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
 <body>
-  <h1>VegePizza</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+               
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav__logo">Jonathan</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            
+        </nav>
+    </header>
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id=home>
+            <div class="home__header-area">
+                <h2>I'm a <span class="animate"></span></h2>
+    
+                <div class="home__text">
+                    <h2>Hello, I'm Jonathan.</h2>
+                </div>
+                
+                <img src="https://media.giphy.com/media/U7Ki2IlyjtUvMCYOQJ/source.gif" class=home__img alt="">
+                
+                <div class="home__button">
+                    <a href="#work" class="home__project-btn">My Projects</a>
+                </div>
+                
+            </div>
+            
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container">
+                <div class="about__img">
+                    <!-- <img src="assets/img/untitled.png" alt=""> -->
+                </div>
+                
+                <div>
+                    <h2 class="about__subtitle">I'm Jonathan</h2>
+                    <div class="about__study-container">
+                        <div class="about__study-grid1">
+                            <img class="about__point1-img" src="assets/img/uq.png"></img>
+                            <li class="about__point">Studied at University of Queensland</li>
+                        </div>
+                        <div class="about__study-grid2">
+                            <img class="about__point2-img" src="assets/img/cs.png"></img>
+                            <li class="about__point">Bachelor of Computer Science, majoring Data Science</li>
+                        </div>
+                    </div>
+                    <p class="about__text">
+                        Interests in machine learning, artificial intelligence, website and application development. 
+                        This website portfolio serves as my library of work/projects and my education.
+                    </p>           
+                </div>
+                
+                <div class="about__programs">
+                    <h2 class="about__programs-title">Skills</h2>
+                    <div class="about__programs-img">
+                        <img src="assets/img/python.png" alt="" class="about__program-item">
+                        <img src="assets/img/java.png" alt="" class="about__program-item">
+                        <img src="assets/img/html.png" alt="" class="about__program-item">
+                        <img src="assets/img/css.png" alt="" class="about__program-item">
+                        <img src="assets/img/javascript.png" alt="" class="about__program-item">
+                        <img src="assets/img/sql.png" alt="" class="about__program-item">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="work__container">
+                <div class="work__img">
+                    <img id="myBtn" src="./assets/img/paint_project_icon.png" alt="">
+                </div>
+
+                 <!-- The Modal -->
+                 <div id="myModal" class="modal">
+                     <!-- Modal content -->
+                     <div class="modal-content">
+                        <span class="close">&times;</span> 
+                        <div class="left_text">
+                            <h2>Sketch Pad</h2>
+                            <p>A simple version of a sketching program, inspired by Microsoft Paint.</p>
+                            <p>The program was written in Python using Pygame module. This
+                                beginner-level project is as an introduction to the Pygame module and GUI 
+                                where the user can interact with the program.
+                            </p>
+                            <p2>Check it out here at <a href="https://github.com/jchai5/paint_project" class="">Github</a>! </p2>
+                            <h2>Tools Used</h2>
+                            <ul>Python</ul>
+                            <h2>Difficulty</h2>
+                            <img src="./assets/img/stars/2star.png" alt="">
+                        </div>
+                        <div class="right_gif">
+                            <img src="./assets/img/paint.gif" alt="">
+                        </div>
+                     </div>
+                 </div>
+    
+            </div>
+            <div class="work__container">
+                <div class="work__img">
+                    <img id="myBtn2" src="./assets/img/sudokuIcon.PNG" alt="">
+                </div>
+                <!-- The Modal -->
+                <div id="myModal2" class="modal">
+                    <div class="modal-content">
+                       <span class="close2">&times;</span>
+                       <div class="left_text">
+                           <h2>Sudoku Solver!</h2>
+                           <p>This program automatically solves the given Sudoku puzzle. 
+                               The solver was written in Python and utilises Pyautogui module to control 
+                                the keyboard inputs to enter the correct numbers. The key algorithm 
+                                that allows the program to find the answer is through brute-force back-tracking.
+                                
+                           </p>
+                           <p2>Check it out here at <a href="https://github.com/jchai5/mySudokuSolver" class="">Github</a>! </p2>
+                           <h2>Tools Used</h2>
+                           <ul>Python</ul>
+                           <h2>Difficulty</h2>
+                            <img src="./assets/img/stars/3star.png" alt="">
+                           
+
+                       </div>
+                       <div class="right_gif">
+                           <img src="./assets/img/sudoku2.gif" alt="">
+                       </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="work__container">
+                <div class="work__img">
+                    <img id="myBtn3"src="./assets/img/pathfinding.png" alt="">
+                </div>
+                <!-- The Modal -->
+                <div id="myModal3" class="modal">
+                    <div class="modal-content">
+                       <span class="close3">&times;</span>
+                       <div class="left_text">
+                           <h2>PathFinding</h2>
+                           <p>This program uses the Pathfinding module to utilise the A* Search algorithm. Pygame was also 
+                               used to create the GUI and user controls.
+                           </p>
+                           <p2>Check it out here at <a href="https://github.com/jchai5/pathfinding" class="">Github</a>! </p2> 
+                           <h2>Tools Used</h2>
+                            <ul>Python</ul>
+                            <h2>Difficulty</h2>
+                            <img src="./assets/img/stars/4star.png" alt="">
+                       </div>
+                       <div class="right_gif">
+                           <img src="./assets/img/pathfinding.gif" alt="">
+                       </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="work__container">
+                <div class="work__img">
+                    <img id="myBtn4"src="https://media.giphy.com/media/gizZvICXsQn2g6JajG/source.gif" alt="">
+                </div>
+                <!-- The Modal -->
+                <div id="myModal3" class="modal">
+                    <div class="modal-content">
+                       <span class="close3">&times;</span>
+                       <div class="left_text">
+                           <h2></h2>
+                           <!-- <p2>Check it out here at <a href="https://github.com/jchai5/paint_project" class="">Github</a>! </p2> -->
+                           <!-- <h2>Tools Used</h2> -->
+                           <!-- <ul>Python</ul> -->
+                       </div>
+                       <div class="right_gif">
+                           <img src="https://media.giphy.com/media/iHD88spVFkL7mZakwa/giphy.gif" alt="">
+                       </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact"> 
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container">
+                <form action="https://formsubmit.co/jonathan_chai90@hotmail.com" method="POST" class="contact__form">
+                    <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                    <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                    <input type="text" name="message" placeholder="Message" cols="0" rows="10" class="contact__input" required></input>
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <button type="submit" class="contact__button">Send</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="/assets/js/script.js"></script>
+
+    <!-- typed.min.js file from typed.js folder -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Add jquery cdn -->
+    <script src="/assets/typed.js-master/lib/typed.min.js"></script>
+    <script>
+        var typed = new Typed(".animate", {
+            strings: [
+                "CompSci Student.",
+                "Programmer.",
+                "Developer."
+            ],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+
+    <!-- FOR MODALS -->
+    <!-- SKETCH PROGRAM -->
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- COMING SOON -->
+    <script>
+        var modal2 = document.getElementById("myModal2");
+        var btn2 = document.getElementById("myBtn2");
+        var span2 = document.getElementsByClassName("close2")[0];
+        btn2.onclick = function() {
+        modal2.style.display = "block";
+        }
+        span2.onclick = function() {
+        modal2.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- COMING SOON -->
+    <script>
+        var modal3 = document.getElementById("myModal3");
+        var btn3 = document.getElementById("myBtn3");
+        var span3 = document.getElementsByClassName("close3")[0];
+        btn3.onclick = function() {
+        modal3.style.display = "block";
+        }
+        span3.onclick = function() {
+        modal3.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal3) {
+                modal3.style.display = "none";
+            }
+        }
+    </script>
+
+
+
 </body>
- 
 </html>
+
