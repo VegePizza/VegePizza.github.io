@@ -1,14 +1,12 @@
 <!-- PROJECT LOGO -->
 <div align="center">
-  <h3 align="center">Jinwoo/Elvin Park Portfolio Website</h3>
+  <h3 align="center">Zachary Zhi Portfolio Website</h3>
 </div>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 This is my first portfolio website where I archive my experience and learning that I gained through my previous and current projects :smile:
-
-Url: <a href="https://elvintern.github.io/">https://elvintern.github.io/</a>
 
 ### Built With
 
@@ -26,7 +24,7 @@ To use SCSS(SASS), you need to install SASS
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/elvintern/elvintern.github.io.git
+   git clone https://github.com/VegePizza/vegepizza.github.io.git
    ```
 2. Install NPM packages (SASS)
    ```sh
@@ -40,8 +38,6 @@ To use SCSS(SASS), you need to install SASS
 <!-- CONTACT -->
 ## Contact
 
-Jinwoo/Elvin Park - elvintern@gmail.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Zachary Zhi - jczhi@hotmail.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
