@@ -217,6 +217,13 @@ body {
   font-size: 2.8rem;
   margin-top: 1.5rem;
 }
+.skill-list-aboutme {
+  display: grid;
+  gap: 1rem 2rem;
+  list-style: none;
+  font-size: 2.8rem;
+  margin-top: 1.5rem;
+}
 .skill-list__icon {
   font-size: 1.2rem;
   color: #18e6b5;
